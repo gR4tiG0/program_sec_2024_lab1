@@ -6,7 +6,7 @@ ERR_LOG = "Error"
 INFO_LOG = "Info"
 DEBUG_LOG = "Debug"
 
-LOG_FILE_PATH = "logs.json"
+LOG_FILE_PATH = "json/logs.json"
 
 def log(log_type:str, message:str) -> None:
     try:

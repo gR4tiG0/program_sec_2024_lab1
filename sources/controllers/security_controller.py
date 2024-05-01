@@ -2,11 +2,11 @@ from argon2 import PasswordHasher
 from json import loads, dumps
 from string import ascii_letters, punctuation
 from errors import *
-from log_controller import *
+from controllers.log_controller import *
 
 ARITHM_SYMBOLS = "+-*/^"
 EMPTY_PASS = "$argon2id$v=19$m=65536,t=3,p=4$NodMK2Xf9JVoqiDtGECPAA$5RPg74/I5hoSgeeqpgytsIlBWMI0jNZDh80ajBGD8dw"
-DB_FILEPATH = 'database.json'
+DB_FILEPATH = 'json/database.json'
 
 def initDB() -> None: 
     try:

@@ -1,7 +1,7 @@
 from json import loads, dumps
 from errors import *
-from log_controller import *
-from security_controller import DB_FILEPATH, EMPTY_PASS, checkPassword
+from controllers.log_controller import *
+from controllers.security_controller import DB_FILEPATH, EMPTY_PASS, checkPassword
 
 def getUsers() -> dict:
     with open(DB_FILEPATH, 'r') as f:

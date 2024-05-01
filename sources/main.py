@@ -2,9 +2,9 @@
 import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk
-from security_controller import checkLogin, changePassword, initDB
-from admin_controller import getUsers, updateUser, createUser, deleteUser
-from log_controller import getLogs
+from controllers.security_controller import checkLogin, changePassword, initDB
+from controllers.admin_controller import getUsers, updateUser, createUser, deleteUser
+from controllers.log_controller import getLogs
 from errors import *
 
 class LoginWindow(tk.Frame):
