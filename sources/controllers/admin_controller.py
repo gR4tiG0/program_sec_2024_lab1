@@ -45,6 +45,11 @@ def updateUser(username:str, restriction, ban) -> dict:
     return username
 
 def createUser(username:str) -> dict:
+
+    if username == "":
+        log(ERR_LOG, f"Attempt to create user failed. Reason: {EMPTY_USERNAME_ERR}")
+        return {"Error": EMPTY_USERNAME_ERR}
+
     with open(DB_FILEPATH, 'r') as f:
         database = loads(f.read())
 
